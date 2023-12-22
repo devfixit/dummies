@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding a Film</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      id="modal1"
+      class="fixed top-0 left-0 right-0 bottom-0 flex hidden justify-center items-center bg-[rgba(0,0,0,0.8)] z-999"
+    >
+      <div class="p-8 rounded-lg h-fit bg-white space-y-4">
+        <div class="flex justify-between w-10/12 max-w-lg">
+          <label for="addproducer">Producer Name</label>
+          <input
+            name="addproducer"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          />
+        </div>
+        <div class="flex justify-between w-10/12 max-w-lg">
+          <label for="producerfilm">Producer Film</label>
+          <input
+            name="producerfilm"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          />
+        </div>
+        <button class="text-white bg-green-500 px-4 py-2 ml-2 rounded-lg">
+          Save
+        </button>
+        <button class="text-white bg-red-500 px-4 py-2 ml-2 rounded-lg">
+          Close
+        </button>
+      </div>
+    </div>
+    <div
+      id="modal2"
+      class="fixed top-0 left-0 right-0 bottom-0 flex hidden justify-center items-center bg-[rgba(0,0,0,0.8)] z-999"
+    >
+      <div class="p-8 rounded-lg h-fit bg-white space-y-4">
+        <div class="flex justify-between w-10/12 max-w-lg">
+          <label for="addproducer">Producer Name</label>
+          <input
+            name="addproducer"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          />
+        </div>
+        <div class="flex justify-between w-10/12 max-w-lg">
+          <label for="producerfilm">Producer Film</label>
+          <input
+            name="producerfilm"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          />
+        </div>
+        <button class="text-white bg-green-500 px-4 py-2 ml-2 rounded-lg">
+          Save
+        </button>
+        <button class="text-white bg-red-500 px-4 py-2 ml-2 rounded-lg">
+          Close
+        </button>
+      </div>
+    </div>
+    <div
+      id="modal3"
+      class="fixed top-0 left-0 right-0 bottom-0 flex hidden justify-center items-center bg-[rgba(0,0,0,0.8)] z-999"
+    >
+      <div class="p-8 rounded-lg h-fit bg-white space-y-4">
+        <div class="flex justify-between w-10/12 max-w-lg">
+          <label for="addproducer">Producer Name</label>
+          <input
+            name="addproducer"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          />
+        </div>
+        <div class="flex justify-between w-10/12 max-w-lg">
+          <label for="producerfilm">Producer Film</label>
+          <input
+            name="producerfilm"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          />
+        </div>
+        <button class="text-white bg-green-500 px-4 py-2 ml-2 rounded-lg">
+          Save
+        </button>
+        <button class="text-white bg-red-500 px-4 py-2 ml-2 rounded-lg">
+          Close
+        </button>
+      </div>
+    </div>
+    <main class="p-6">
+      <h1 class="text-2xl font-bold text-center">Adding a film</h1>
+      <form class="flex flex-col justify-center space-y-2">
+        <div class="flex justify-between w-10/12 max-w-lg">
+          <label for="filmname">Film Name</label>
+          <input
+            name="filmname"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          />
+        </div>
+        <div class="flex justify-between w-10/12 max-w-lg">
+          <label for="filmlink">Film Link</label>
+          <input
+            name="filmlink"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          />
+        </div>
+        <div class="flex">
+          <div class="flex justify-between w-10/12 max-w-lg">
+            <label for="producer">Producer</label>
+            <input
+              name="producer"
+              class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+            />
+          </div>
+          <button
+            id="addproducerbtn"
+            class="text-white bg-yellow-500 px-4 py-2 ml-2 rounded-lg"
+          >
+            Add producer
+          </button>
+        </div>
+        <div class="flex justify-between w-10/12 max-w-lg">
+          <label for="brand">Brand</label>
+          <input
+            name="brand"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          />
+        </div>
+        <div class="flex justify-between w-10/12 max-w-lg">
+          <label for="duration">Duration</label>
+          <input
+            name="duration"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          />
+        </div>
+        <div class="flex justify-between w-10/12 max-w-lg">
+          <label for="industry">Industry</label>
+          <select
+            name="industry"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          >
+            <option>Fashion</option>
+            <option>Beauty</option>
+          </select>
+        </div>
+        <div class="flex justify-between w-10/12 max-w-lg">
+          <label for="genre">Genre</label>
+          <select
+            name="genre"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          >
+            <option>Comedy</option>
+            <option>Porn</option>
+          </select>
+        </div>
+        <div class="flex justify-between w-10/12 max-w-lg">
+          <label for="releaseyear">Year of release</label>
+          <input
+            name="releaseyear"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          />
+        </div>
+      </form>
+
+      <div class="bg-gray-300 p-4 my-8 space-y-2">
+        <div class="flex justify-between">
+          <h2 class="text-xl font-semibold">Locations</h2>
+          <button class="text-white bg-yellow-500 px-4 py-2 ml-2 rounded-lg">
+            Add Location
+          </button>
+        </div>
+        <div class="m-4 p-4 border border-black bg-white">
+          <div class="flex justify-between">
+            <div class="flex justify-between w-10/12 max-w-lg">
+              <label for="country">Country</label>
+              <select
+                name="country"
+                class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+              >
+                <option>India</option>
+                <option>US</option>
+                <option>UK</option>
+              </select>
+            </div>
+            <div class="flex justify-between w-10/12 max-w-lg">
+              <label for="city">City</label>
+              <select
+                name="city"
+                class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+              >
+                <option>Mumbai</option>
+                <option>Bangalore</option>
+                <option>Helsinki</option>
+              </select>
+            </div>
+            <button
+              id="add-crew-1"
+              class="text-white bg-blue-500 px-4 py-2 ml-2 rounded-lg"
+            >
+              Add Crew
+            </button>
+          </div>
+          <h2 class="text-center text-xl font-semibold">Crew List</h2>
+          <table class="w-full table-auto mt-2">
+            <thead>
+              <tr class="text-left">
+                <th class="border">Crew Role</th>
+                <th class="border">Crew Name</th>
+                <th class="border">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border">Producer</td>
+                <td class="border">Abhishek D</td>
+                <td class="border">Action/Delete</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mx-4 p-4 border border-black bg-white">
+          <div class="flex justify-between">
+            <div class="flex justify-between w-10/12 max-w-lg">
+              <label for="country">Country</label>
+              <select
+                name="country"
+                class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+              >
+                <option>Srilanka</option>
+                <option>US</option>
+                <option>UK</option>
+              </select>
+            </div>
+            <div class="flex justify-between w-10/12 max-w-lg">
+              <label for="city">City</label>
+              <select
+                name="city"
+                class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+              >
+                <option>Mumbai</option>
+                <option>Bangalore</option>
+                <option>Helsinki</option>
+              </select>
+            </div>
+            <button
+              id="add-crew-2"
+              class="text-white bg-green-500 px-4 py-2 ml-2 rounded-lg"
+            >
+              Add Crew
+            </button>
+          </div>
+          <h2 class="text-center text-xl font-bold">Crew List</h2>
+          <table class="w-full table-auto mt-2">
+            <thead>
+              <tr class="text-left">
+                <th class="border">Crew Role</th>
+                <th class="border">Crew Name</th>
+                <th class="border">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border">Producer</td>
+                <td class="border">Abhishek D</td>
+                <td class="border">Action/Delete</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    const btn1 = document.getElementById("addproducerbtn");
+    const btn2 = document.getElementById("add-crew-1");
+    const btn3 = document.getElementById("add-crew-2");
+    const modal1 = document.getElementById("modal1");
+    const modal2 = document.getElementById("modal2");
+    const modal3 = document.getElementById("modal3");
+    const modals = [modal1, modal2, modal3];
+    const btns = [btn1, btn2, btn3];
+
+    btns.forEach((e, id) =>
+      e.addEventListener("click", () => {
+        event.preventDefault();
+        modals[id].classList.remove("hidden");
+        document.body.classList.add("overflow-hidden");
+      }),
+    );
+
+    modals.forEach((i) =>
+      i.querySelectorAll("button").forEach((e) =>
+        e.addEventListener("click", () => {
+          i.classList.add("hidden");
+          document.body.classList.remove("overflow-hidden");
+        }),
+      ),
+    );
+  </script>
+</html>

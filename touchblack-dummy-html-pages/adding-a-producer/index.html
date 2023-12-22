@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-6">
+    <div>
+      <h1 class="text-center text-2xl font-bold">Adding a producer</h1>
+      <form class="flex flex-col max-w-5xl space-y-2 my-8 mx-auto">
+        <div>
+          <label for="logo">Logo</label>
+          <input
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+            name="logo"
+            type="file"
+          />
+        </div>
+        <div>
+          <label for="businessname">Name of Business(as per GST)</label>
+          <input
+            name="businessname"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          />
+        </div>
+        <div>
+          <p class="inline mr-8">Type of Business</p>
+          <input type="radio" name="type" />
+          <label for="type">Production house</label>
+          <input type="radio" name="type" />
+          <label for="type">Agency</label>
+          <input type="radio" name="type" />
+          <label for="type">Brand</label>
+        </div>
+        <div>
+          <label for="businessowner">Business Owner</label>
+          <input
+            name="businessowner"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          />
+        </div>
+      </form>
+
+      <div class="bg-gray-300 p-4">
+        <p>Primary Address</p>
+        <div class="m-4 bg-white p-4 flex justify-between space-y-4 flex-wrap">
+          <div class="flex flex-col lg:w-[48%]">
+            <label class="text-sm" for="address1">Address 1</label>
+            <input
+              class="outline-none border-b pt-1"
+              placeholder="Enter Address 1"
+              name="address1"
+            />
+          </div>
+          <div class="flex flex-col lg:w-[48%]">
+            <label class="text-sm" for="address1">Address 2</label>
+            <input
+              class="outline-none border-b pt-1"
+              placeholder="Enter Address 2"
+              name="address2"
+            />
+          </div>
+          <div class="flex flex-col lg:w-[48%]">
+            <label class="text-sm" for="landmark">Landmark</label>
+            <input
+              class="outline-none border-b pt-1"
+              placeholder="Enter Landmark"
+              name="landmark"
+            />
+          </div>
+          <div class="flex flex-col lg:w-[48%]">
+            <label class="text-sm" for="country">Country</label>
+            <select
+              class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+              name="country"
+            >
+              <option>India</option>
+              <option>US</option>
+            </select>
+          </div>
+          <div class="flex flex-col lg:w-[32%]">
+            <label class="text-sm" for="state">State</label>
+            <select
+              class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+              name="state"
+            >
+              <option>Bihar</option>
+              <option>JK</option>
+            </select>
+          </div>
+          <div class="flex flex-col lg:w-[32%]">
+            <label class="text-sm" for="city">City</label>
+            <input
+              class="outline-none border-b pt-1"
+              placeholder="Enter City"
+              name="city"
+            />
+          </div>
+          <div class="flex flex-col lg:w-[32%]">
+            <label class="text-sm" for="pincode">Pincode</label>
+            <input
+              class="outline-none border-b pt-1"
+              placeholder="Enter Pincode"
+              name="pincode"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto my-8 max-w-5xl space-y-2">
+        <div class="flex justify-between">
+          <label for="incorporation">Year of incorporation</label>
+          <input
+            name="incorporation"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          />
+        </div>
+        <div class="flex justify-between">
+          <label for="gstin">GSTIN</label>
+          <input
+            type="file"
+            name="gstin"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          />
+        </div>
+        <div class="flex justify-between">
+          <label for="pan">PAN</label>
+          <input
+            type="file"
+            name="pan"
+            class="border rounded focus-visible:ring-1 px-2 py-1 focus-visible:ring-yellow-500 outline-none"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
